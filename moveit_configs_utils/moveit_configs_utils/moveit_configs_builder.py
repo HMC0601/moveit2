@@ -1,3 +1,4 @@
+from __future__ import annotations
 """Simplify loading moveit config parameters.
 
 This module provides builder-pattern based class to simplify loading moveit related parameters found in
@@ -87,7 +88,7 @@ def get_pattern_matches(folder, pattern):
     return matches
 
 
-@dataclass(slots=True)
+@dataclass#(slots=True)
 class MoveItConfigs:
     """Class containing MoveIt related parameters."""
 
